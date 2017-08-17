@@ -1,0 +1,22 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prilak/game.git"
+  },
+  "author": "Michael Lawrence",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prilak/game/issues"
+  },
+  "homepage": "https://github.com/prilak/game#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
