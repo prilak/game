@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/prilak/game#readme",
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7"
   }
 }
