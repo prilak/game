@@ -3,6 +3,11 @@ var characters = [];
 var mapCount = 0;
 var mainChar = 0;
 function setup(){
+    $.getJSON("data.json", function(json) {
+    alert(json["name"]); // this will show the info it in firebug console
+});
+    
+    
     maps[mapCount] = new Map();
     createCanvas(500, 500);
     pixelDensity(1);

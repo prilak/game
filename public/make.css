@@ -1,0 +1,9 @@
+.create {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    height: 700px;
+    width: 500px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
