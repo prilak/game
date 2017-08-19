@@ -2,6 +2,8 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Game Test</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="make.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.js"></script>
 	<script type="text/javascript" src="game.js"></script>
@@ -11,6 +13,10 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </head>
 <body>
-	
+	<a href="/">Return to homepage</a>
+	<div class="btn-pos">
+		<a class="btn btn-primary btn-lg btn-big" id="left" onmousedown="characters[mainChar].moveDirClick(-1)" onmouseup="characters[mainChar].moveStopClick()">Left</a>
+		<a class="btn btn-primary btn-lg btn-big" id="right" onmousedown="characters[mainChar].moveDirClick(1)" onmouseup="characters[mainChar].moveStopClick()">Right</a>
+	</div>
 </body>
 </html>

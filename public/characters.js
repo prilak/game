@@ -8,16 +8,38 @@ function Player(xPos, yPos){
 	this.speedY = 5;
 	this.speedX = 0;
 	this.xDir = 1;
+	var xClicked = false;
 	this.attackInit = 0;
 	this.moveDir = function (){
-    	if(keyIsDown(LEFT_ARROW)){
-    	    this.speedX = -2;
-    	    this.xDir = -1;
-    	}
-    	if(keyIsDown(RIGHT_ARROW)){
-    	    this.speedX = 2;
-    	    this.xDir = 1;
-    	}
+		if(xClicked == false){//this 
+	    	if(keyIsDown(LEFT_ARROW)){
+	    	    this.speedX = -2;
+	    	    this.xDir = -1;
+	    	}
+	    	if(keyIsDown(RIGHT_ARROW)){
+	    	    this.speedX = 2;
+	    	    this.xDir = 1;
+	    	}
+		}
+    	// var phoneKeysLeft = document.getElementById("left").style.backgroundColor;
+    	// if(phoneKeysLeft=="red"){
+    	// 	this.speedX = -2;
+    	//     this.xDir = -1;
+    	// }
+    	//alert("wait");
+	}
+	this.moveDirClick = function(dir){
+		xClicked = true;
+		if(dir == 1){
+			this.speedX = 2;
+    		this.xDir = 1;
+		} else {
+			this.speedX = -2;
+    		this.xDir = -1;
+		}
+	}
+	this.moveStopClick = function(){
+		xClicked = false;
 	}
 	this.move = function(){
 		this.moveX();
@@ -28,7 +50,9 @@ function Player(xPos, yPos){
 			this.speedX = 0;
 		}
 		this.xPos += this.speedX;
-		this.speedX = 0;
+		if(xClicked == false){
+			this.speedX = 0;
+		}
 	}
 	this.moveY = function(){
 		if(this.speedY>0){

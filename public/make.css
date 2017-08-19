@@ -7,3 +7,15 @@
     padding-right: 0px;
     padding-left: 0px;
 }
+.btn-pos {
+    position: absolute;
+    left: 325px;
+    top: 425px;
+}
+.btn-big {
+    height: 90px;
+    width: 145px;
+}
+#left {
+    background-color: red;
+}
